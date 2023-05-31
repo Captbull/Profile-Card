@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#wrap{
+    height: 50rem;
+    width: 30rem;
+    background-color: cadetblue;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+h1{
+    
+}
+input{
+    border-radius: 10px;
+    height: 2rem;
+    width: 15rem;
+}
+
