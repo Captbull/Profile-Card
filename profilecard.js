@@ -5,21 +5,22 @@ const lastName = document.getElementById('lastname')
 const phone = document.getElementById('phone')
 const address = document.getElementById('street')
 const country = document.getElementById('country')
+const email = document.getElementById('email')
 
 let url = 'https://randomuser.me/api/'
 
 const getProfile = () => {
     fetch(url).then(response => response.json())
-    .then(data =>{
-        const user = data.results[0];
-        title.value = data.result.name.title,
-        firstName.Value = data.result.name.firstName
-        lastName.value = data.result.name.lastName
-        phone.value = data.result.name.phone
-        address.value = 
-        country.value = 
+    .then(data => {
+        console.log(data);
+        title.value = data.results[0].name.title;
+        firstName.value = data.results[0].name.first;
+        lastName.value = data.results[0].name.last;
+        phone.value = data.results[0].phone;
+        email.value = data.results[0].email;
+        address.value = data.results[0].location.street.name;
+        country.value = data.results[0].location.coordinates.country;
     })
 }
 
 getProfile()
-
